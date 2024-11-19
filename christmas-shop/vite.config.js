@@ -3,7 +3,8 @@ import  path from 'path';
 
 export default defineConfig(() => {
     return {
-        base: "./",
+        base: "/test-rs-1-tsak/christmas-shop/",
+        publicDir: "public",
         build: {
             sourcemap: true, // enable production source maps
         },
