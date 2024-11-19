@@ -1,0 +1,42 @@
+.about {
+  height: 648px;
+  box-sizing: border-box;
+  background-image: url("/src/assets/img/backgrounds/about-section-snow.svg");
+  background-color: $primary;
+  padding: 60px 82px;
+
+  &__wrapper {
+    @include size(1276px, 528px);
+    background-color: $static-white;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__info {
+    width: 50%;
+    padding: 100px 152px 100px 60px;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+  }
+
+  &__title {
+    color : $primary;
+  }
+
+  &__describtion{
+
+  }
+
+
+  &__image {
+    width: 50%;
+    border-radius: 20px;
+  }
+}

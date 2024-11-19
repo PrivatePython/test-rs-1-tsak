@@ -1,0 +1,57 @@
+.header-1 {
+  @include font(32px, 600);
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.header-2 {
+  @include font(24px, 600);
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.header-3 {
+  @include font(16px, 600);
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.header-4 {
+  @include font(12px, 600);
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  @include font(16px, 400);
+  line-height: 148%;
+}
+
+.action-large {
+  @include font(24px, 600);
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.action-small {
+  @include font(12px, 600);
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.caption {
+  @include font(24px, 400, Allura);
+  line-height: 100%;
+  letter-spacing: 0.05em;
+}
+
+.slider-text {
+  @include font(80px, 600);
+  text-transform: uppercase;
+}

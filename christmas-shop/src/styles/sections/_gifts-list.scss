@@ -1,0 +1,68 @@
+.gifts{
+  position: relative;
+  @include size(100%, 1394px);
+  box-sizing: border-box;
+  padding: 60px 82px;
+  border-radius: 20px;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include size(100%, 200px);
+    background-image: url("/src/assets/img/backgrounds/bg-gifts-section.svg");
+  }
+
+  &__title {
+    box-sizing: border-box;
+    @include size(426px, 144px);
+    text-align: center;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 40px;
+  }
+
+  &__tab-item {
+    margin: 0;
+    padding: 12px 20px;
+    //box-sizing: border-box;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    background: none;
+    color: $static-white;
+  }
+
+  &__tab-item:hover {
+    background-color: $static-white-20;
+    cursor: pointer;
+  }
+
+  &__tab-item:disabled{
+    background-color: $static-white-20;
+    cursor: default;
+  }
+
+  &__title {
+    color: $static-white;
+  }
+
+  &__list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+}

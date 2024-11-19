@@ -1,0 +1,24 @@
+.timer {
+  @include size(330px, 72px);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: $static-white-40;
+  padding: 8px 12px 12px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__date, &__hour, &__minutes, &__seconds {
+    @include size(80px, 52px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__separator {
+    width: 20px;
+    border-top: 1px solid $static-white-40;
+    transform: rotate(90deg);
+  }
+}

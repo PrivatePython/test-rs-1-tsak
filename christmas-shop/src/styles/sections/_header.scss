@@ -1,0 +1,57 @@
+.header {
+  background-color: $static-white;
+  height: 64px;
+  padding: 0 82px;//TODO 12px pad left
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+    padding: 8px 20px;
+    color: $dark;
+  }
+
+  &__logo-image {
+    @include size(24px);
+  }
+
+  &__logo-text {
+
+  }
+
+  &__nav {
+
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  &__nav-item {
+
+  }
+
+  &__nav-link {
+    padding: 12px 20px;
+    color: $dark;
+
+    &:hover {
+      border-radius: 12px;
+      background-color: $primary-10;
+      color: $primary;
+    }
+    &--disabled {
+      border-radius: 12px;
+      background-color: $primary-10;
+      color: $primary;
+      pointer-events: none;
+    }
+  }
+}

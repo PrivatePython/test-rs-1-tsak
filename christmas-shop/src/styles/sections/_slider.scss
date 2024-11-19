@@ -1,0 +1,86 @@
+.slider {
+  height: 488px;
+  box-sizing: border-box;
+  padding: 60px 0;
+  background-color: $primary;
+  background-image: url("/src/assets/img/backgrounds/slider-section-snow.svg");
+  color: $static-white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.slider-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 82px;
+    box-sizing: border-box;
+    max-width: 1440px;
+    overflow: hidden;
+  }
+
+  &__carousel-image {
+    border-radius: 20px;
+  }
+
+  &__switchers-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-right: 82px;
+  }
+
+  &__switcher-right, &__switcher-left {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include size(56px);
+    border: 1px solid $static-white;
+    border-radius: 20px;
+
+    &:disabled {
+      border-color: $static-white-40;
+      color: $static-white-40;
+
+      & path {
+        stroke: $static-white-40;
+      }
+    }
+
+    &:hover:not(:disabled) {
+      cursor: pointer;
+      background-color: $static-white;
+      color: $primary;
+      stroke: $primary;
+
+      & path {
+        stroke: $primary;
+      }
+    }
+  }
+
+  &__switcher-image {
+    @include size(24px);
+    box-sizing: border-box;
+  }
+}
+
+
+

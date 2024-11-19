@@ -1,0 +1,27 @@
+.hero {
+  background-color: $primary;
+  background-image: url("/src/assets/img/backgrounds/hero-section-ball-and-snow.svg");
+  border-radius: 20px 20px 0px 0px;
+  height: 524px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    @include size(426px,404px);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  &__celebration, &__title {
+    color: $static-white;
+  }
+  &__title {
+    width: 430px;
+  }
+}
+

@@ -1,0 +1,15 @@
+.button-magical-gifts {
+  @extend .action-small;
+  height: 56px;
+  width: 256px;
+  background-color: $dark;
+  color: $static-white;
+  border-radius: 20px;
+  border: none;
+
+  &:hover {
+    background-color: $static-white;
+    color: $dark;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,51 @@
+.card {
+  @include size(310px, 342px);
+  background-color: $content-background;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+
+    .card__title {
+      color: $primary;
+    }
+  }
+
+  &__image {
+    box-sizing: border-box;
+    @include size(100%, 230px)
+  }
+
+  &__info {
+    background-color: $static-white;
+    border-radius: 20px;
+    padding: 20px 20px;
+    @include size(100%, 112px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  &__category {
+    &--purple {
+      color: $tag-purple;
+    }
+
+    &--green {
+      color: $tag-green;
+    }
+
+    &--pink {
+      color: $tag-pink;
+    }
+  }
+}
+
+
