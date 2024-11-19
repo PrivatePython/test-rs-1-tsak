@@ -3,6 +3,7 @@ import  path from 'path';
 
 export default defineConfig(() => {
     return {
+        base: "./",
         build: {
             sourcemap: true, // enable production source maps
         },
