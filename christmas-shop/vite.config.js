@@ -1,13 +1,13 @@
 import {defineConfig} from "vite";
-import  path from 'path';
+import  path from "path";
 
 export default defineConfig(() => {
     return {
-        base: "/test-rs-1-tsak/christmas-shop",
+        base: "/test-rs-1-tsak/christmas-shop/",
         resolve: {
             alias: {
                 '@': path.resolve(__dirname, './src'),
-                '@assets': path.resolve(__dirname, './src/assets')
+                // '@assets': path.resolve(__dirname, './src/assets')
             }
         },
         build: {
@@ -19,6 +19,7 @@ export default defineConfig(() => {
                 }
             }
         },
+        publicDir: "public",
         css: {
             devSourcemap: true, // enable CSS source maps during development
             preprocessorOptions: {
